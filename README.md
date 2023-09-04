@@ -4,7 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+para crear las variables de entorno puede usar los siguientes comandos
+npm run envs
+npm start 
+npm run start
+ ### el comando ng serve no crea las variables de entorno!
 
 ## Code scaffolding
 

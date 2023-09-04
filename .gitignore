@@ -10,7 +10,9 @@
 /node_modules
 npm-debug.log
 yarn-error.log
-
+# ENVIRONMENTS
+.env
+src/environments/environments.ts
 # IDEs and editors
 .idea/
 .project
