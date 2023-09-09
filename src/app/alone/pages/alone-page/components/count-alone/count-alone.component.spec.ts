@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PropertiesPageComponent } from './properties-page.component';
+import { CountAloneComponent } from './count-alone.component';
 
-describe('PropertiesPageComponent', () => {
-  let component: PropertiesPageComponent;
-  let fixture: ComponentFixture<PropertiesPageComponent>;
+describe('CountAloneComponent', () => {
+  let component: CountAloneComponent;
+  let fixture: ComponentFixture<CountAloneComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PropertiesPageComponent ]
+      imports: [ CountAloneComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PropertiesPageComponent);
+    fixture = TestBed.createComponent(CountAloneComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
