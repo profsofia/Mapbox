@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-=======
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Map, LngLat, Marker } from 'mapbox-gl';
 
@@ -13,16 +10,13 @@ interface PlainMarker {
   color: string;
   lngLat: number[];
 }
->>>>>>> 80e01eeabbe50e0a0999a28fb3aed80b6bfd4a58
 
 @Component({
   templateUrl: './markers-page.component.html',
   styleUrls: ['./markers-page.component.css'],
 })
 export class MarkersPageComponent {
-<<<<<<< HEAD
 
-=======
   @ViewChild('map') divMap?: ElementRef;
   public zoom: number = 10;
   public map?: Map;
@@ -45,7 +39,7 @@ export class MarkersPageComponent {
     this.readToLocalStorage();
 
     //creamos un marcador complejo, como ejemplo
-    const markerHtml = document.createElement('div');
+    /*const markerHtml = document.createElement('div');
     markerHtml.innerHTML = `<p><b>Sofia Schenone</b></p>`;
     const marker = new Marker(
       //podemos personalizar todo del marcador, el color, el ícono
@@ -57,7 +51,7 @@ export class MarkersPageComponent {
       //establecemos el centro del mapa
       .setLngLat(this.lngLat)
       //añadimos el marcador al mapa
-      .addTo(this.map);
+      .addTo(this.map);*/
   }
 
   createMarker() {
@@ -134,5 +128,4 @@ export class MarkersPageComponent {
       this.addMarkerToMap(coords, color);
     });
   }
->>>>>>> 80e01eeabbe50e0a0999a28fb3aed80b6bfd4a58
 }
